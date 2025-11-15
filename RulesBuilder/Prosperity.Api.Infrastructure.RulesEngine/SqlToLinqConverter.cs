@@ -12,7 +12,7 @@ namespace Prosperity.Api.Infrastructure.RulesEngine;
 public class SqlToLinqConverter : ISqlToLinqConverter
 {
     private static readonly Regex LikeRegex = new(@"(?<prop>\w+(?:\.\w+)*)\s+like\s+'(?<pattern>[^']*)'", RegexOptions.IgnoreCase | RegexOptions.Compiled);
-    private static readonly Regex ComparisonRegex = new(@"(?<prop>\w+(?:\.\w+)*)\s*(?<op>==|!=|<>|>=|<=|>|<)\s*'(?<value>[^']*)'", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex ComparisonRegex = new(@"(?<prop>\w+(?:\.\w+)*)\s*(?<op>=|==|!=|<>|>=|<=|>|<)\s*'(?<value>[^']*)'", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex NullComparisonRegex = new(@"(?<prop>\w+(?:\.\w+)*)\s+is\s+(?<neg>not\s+)?null", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex InOperatorRegex = new(@"(?<prop>\w+(?:\.\w+)*)\s+(?<neg>not\s+)?in\s*\((?<values>[^)]*)\)", RegexOptions.IgnoreCase | RegexOptions.Compiled);
     private static readonly Regex OperatorTokenRegex = new(@"\b(greaterthanorequal|greaterthan|lessthanorequal|lessthan|equal|notequal)\b", RegexOptions.IgnoreCase | RegexOptions.Compiled);
@@ -215,6 +215,7 @@ public class SqlToLinqConverter : ISqlToLinqConverter
     {
         return op switch
         {
+            "=" => "==",
             "<>" => "!=",
             _ => op
         };
