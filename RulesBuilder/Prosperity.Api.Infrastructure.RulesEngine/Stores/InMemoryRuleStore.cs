@@ -1,4 +1,9 @@
-namespace Prosperity.Api.Infrastructure.RulesEngine;
+using System.Collections.Generic;
+using System.Linq;
+using Prosperity.Api.Infrastructure.RulesEngine.Abstractions;
+using Prosperity.Api.Infrastructure.RulesEngine.Models;
+
+namespace Prosperity.Api.Infrastructure.RulesEngine.Stores;
 
 public sealed class InMemoryRuleStore : IRuleStore
 {

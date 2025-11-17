@@ -1,6 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
+using Prosperity.Api.Infrastructure.RulesEngine.Abstractions;
+using Prosperity.Api.Infrastructure.RulesEngine.Builders;
+using Prosperity.Api.Infrastructure.RulesEngine.Converters;
+using Prosperity.Api.Infrastructure.RulesEngine.Engine;
+using Prosperity.Api.Infrastructure.RulesEngine.Hosting;
+using Prosperity.Api.Infrastructure.RulesEngine.Services;
+using Prosperity.Api.Infrastructure.RulesEngine.Stores;
 
-namespace Prosperity.Api.Infrastructure.RulesEngine;
+namespace Prosperity.Api.Infrastructure.RulesEngine.DependencyInjection;
 
 public static class RulesEngineServiceCollection
 {

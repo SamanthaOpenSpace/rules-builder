@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using AutoFixture.NUnit3;
 using NUnit.Framework;
 using NUnit.Framework.Legacy;
-using Prosperity.Api.Infrastructure.RulesEngine;
 
 namespace Prosperity.Api.Infrastructure.Storages.Tests.Services;
 
