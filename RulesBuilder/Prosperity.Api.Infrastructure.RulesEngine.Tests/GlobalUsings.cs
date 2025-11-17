@@ -1,1 +1,9 @@
 global using NUnit.Framework;
+global using Prosperity.Api.Infrastructure.RulesEngine.Abstractions;
+global using Prosperity.Api.Infrastructure.RulesEngine.Builders;
+global using Prosperity.Api.Infrastructure.RulesEngine.Converters;
+global using Prosperity.Api.Infrastructure.RulesEngine.Engine;
+global using Prosperity.Api.Infrastructure.RulesEngine.Models;
+global using Prosperity.Api.Infrastructure.RulesEngine.Rules;
+global using Prosperity.Api.Infrastructure.RulesEngine.Services;
+global using Prosperity.Api.Infrastructure.RulesEngine.Stores;

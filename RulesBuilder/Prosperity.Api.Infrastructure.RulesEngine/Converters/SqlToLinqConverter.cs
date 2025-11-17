@@ -6,8 +6,9 @@ using System.Linq.Dynamic.Core;
 using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Prosperity.Api.Infrastructure.RulesEngine.Abstractions;
 
-namespace Prosperity.Api.Infrastructure.RulesEngine;
+namespace Prosperity.Api.Infrastructure.RulesEngine.Converters;
 
 public class SqlToLinqConverter : ISqlToLinqConverter
 {

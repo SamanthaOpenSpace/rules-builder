@@ -1,6 +1,9 @@
 using System.Linq;
+using Prosperity.Api.Infrastructure.RulesEngine.Abstractions;
+using Prosperity.Api.Infrastructure.RulesEngine.Models;
+using Prosperity.Api.Infrastructure.RulesEngine.Rules;
 
-namespace Prosperity.Api.Infrastructure.RulesEngine;
+namespace Prosperity.Api.Infrastructure.RulesEngine.Services;
 
 public sealed class CptRuleIngestionService
 {

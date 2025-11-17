@@ -1,7 +1,6 @@
 using System.Linq;
 using AutoFixture.NUnit3;
 using NUnit.Framework;
-using Prosperity.Api.Infrastructure.RulesEngine;
 
 namespace Prosperity.Api.Infrastructure.Storages.Tests;
 

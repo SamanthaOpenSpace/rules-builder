@@ -3,7 +3,6 @@ using System.Linq.Expressions;
 using AutoFixture.NUnit3;
 using FluentAssertions;
 using NUnit.Framework;
-using Prosperity.Api.Infrastructure.RulesEngine;
 
 namespace Prosperity.Api.Infrastructure.Storages.Tests;
 
